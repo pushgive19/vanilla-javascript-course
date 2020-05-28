@@ -1,0 +1,11 @@
+body {
+  background-color: peru;
+}
+
+
+
+h1 {
+  color:#2c3e50;
+  transition:color .5s ease-in-out;
+}
+
