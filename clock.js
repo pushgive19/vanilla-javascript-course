@@ -12,10 +12,13 @@ function getClock(){
   const minutes = date.getMinutes();
   const seconds = date.getSeconds();
   
-  clockTitle.innerHTML = `${hours}:${minutes}:${seconds}`  ;
+  clockTitle.innerHTML = `${hours < 10 ? `0${hours}`: hours}:${
+                            minutes<10 ?`0${minutes}`:minutes}:${
+                            seconds<10? `0${seconds}`: seconds}`  ;
 }
 function init(){
-  getClock();  
+  getClock();//나는 이거 지웠더니 처음에 00으로 시작.
+  setInterval(getClock, 1000  );
 }  
 init();
 

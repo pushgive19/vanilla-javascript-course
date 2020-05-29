@@ -4,8 +4,18 @@ body {
 
 
 
-h1 {
+body {
   color:#2c3e50;
-  transition:color .5s ease-in-out;
+
 }
 
+
+.form,
+.greetings{
+  display:none;
+ 
+}
+
+.showing{
+  display:block;
+}
