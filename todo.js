@@ -14,6 +14,7 @@ function deletToDo(event){
     const btn = event.target;
     const li  = btn.parentNode; //변수 정해주는거. 나는 그냥한줄로 적었는데. 이게 더 좋은듯.
     toDoList.removeChild(li);
+
     const cleanToDos = toDos.filter(function(toDo){
         return toDo.id !== parseInt(li.id);
     });
@@ -64,7 +65,7 @@ function loadToDos(){
     const loadedToDos = localStorage.getItem(TODO_LS);
     
     if(loadedToDos !== null){
-        const parsedToDos = JSON.parse(loadedToDos)
+        const parsedToDos = JSON.parse(loadedToDos);
         parsedToDos.forEach(function(toDo){
             paintToDo(toDo.text);
         });
