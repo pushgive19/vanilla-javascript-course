@@ -39,7 +39,7 @@ function askForCoords(){
 }
 
 
-}
+
 
 function loadCoords(){
     const loadedCoords =  localStorage.getItem(COORDS_LS);

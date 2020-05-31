@@ -1,15 +1,37 @@
+@import "reset.css";
+html, body{
+  height:100%;
+}
 body {
   background-color: none;
+  color:#ffffff;
+ 
+}
+div{
+  display: flex;
+  /* align-items:center; */
+  justify-content: center;
+}
+div h1{
+  font-size:250px;
+  font-weight:bold;
+ /* position:absolute; */
+
 }
 
-body {
-  color:#f53b57;
-
+div form{
+  display:flex;
+  justify-content:center;
+  
 }
-
+div h4{
+  padding-top:25px;
+  font-size:50px;
+}
 .form,
 .greetings{
   display:none;
+
  
 }
 
