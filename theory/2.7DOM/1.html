@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript Arrays</h2>
+
+    <p>Array.forEach() calls a function for each array element.</p>
+
+    <p>Array.forEach() is not supported in Internet Explorer 8 or earlier.</p>
+
+    <p id="demo"></p>
+
+    <script>
+      var fruits, text;
+      fruits = ["Banana", "Orange", "Apple", "Mango"];
+      const demo = document.getElementById("demo")
+
+    //   text = "<ul>";
+    //   fruits.forEach(myFunction);
+    //   text += "</ul>";
+    //   demo.innerHTML = text;
+    //   function myFunction(value) {
+    //     text += "<li>" + value + "</li>";
+    //   }
+   
+    const ul = document.createElement("ul");
+    fruits.forEach(function(value){
+        const li = document.createElement("li");
+        demo.appendChild(ul);
+        ul.appendChild(li);
+        li.innerText = value;
+    });
+      //위의 함수를 DOM으로 이용해서 표현해보자.
+      // function myFunction(value) {
+      // //   console.log("hi");
+      //    document.getElementById("demo").addClassList("li);
+      //    li.appendChild(value);
+    //   // }
+
+    //   function myFunction(value) {
+    //     text += "<li>" + value + "</li>";
+    //   }
+    </script>
+  </body>
+</html>
